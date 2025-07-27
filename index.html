@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hasan Hussain | Web Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link rel="stylesheet" href="./style.css">
+</head>
+<body data-theme="light">
+
+  <button class="toggle-theme" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+  <header>
+    <h1>Hasan Hussain</h1>
+    <p>Web Developer | Karachi, Pakistan</p>
+    <!-- <p>Email: muahammadhasanghori01@gmail.com <br>
+        hs3905995@gmail.com</p> -->
+         <p>
+  Email 1: <a href="mailto:muahammadhasanghori01@gmail.com" style="color: #fff; text-decoration: underline;">muahammadhasanghori01@gmail.com</a><br>
+  Email 2: <a href="mailto:hs3905995@gmail.com" style="color: #fff; text-decoration: underline;">hs3905995@gmail.com.com</a>
+</p>
+
+    <p>Contact: +923238252153 </p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I am a passionate and motivated Web Developer with skills in HTML, CSS, JavaScript, and data entry. I'm a fresher, but highly enthusiastic about learning and building responsive websites.</p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript (Basic)</li>
+      <li>Data Entry</li>
+      <li>Responsive Design (Basic)</li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <strong>Personal Portfolio Website</strong><br>
+        Built a simple personal site using HTML, CSS, and JavaScript. [Coming Soon]
+      </li>
+      <li>
+        <strong>Landing Page</strong><br>
+        Created a basic landing page layout as a practice project. [Coming Soon]
+      </li>
+    </ul>
+  </section>
+
+  <div class="buttons">
+    <a href="./HASAN HUSSAIN.pdf" download><i class="fas fa-download"></i> Download Resume</a>
+    <a href="https://api.whatsapp.com/send?phone=+923238252153" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+  </div>
+
+  <footer>
+    <p>© 2025 Hasan Hussain. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://github.com/hasan2575" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/your-linkedin" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:muahammadhasanghori01@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const currentTheme = body.getAttribute("data-theme");
+      const newTheme = currentTheme === "light" ? "dark" : "light";
+      body.setAttribute("data-theme", newTheme);
+      document.querySelector(".toggle-theme").textContent = newTheme === "light" ? "🌙 Dark Mode" : "☀️ Light Mode";
+    }
+  </script>
+
+</body>
+</html>
+
+
+
